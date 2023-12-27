@@ -1,8 +1,8 @@
 
 import pandas as pd
 import numpy as np
-from src.DimondPricePrediction.logger import logging
-from src.DimondPricePrediction.exception import customexception
+from src.Drug-activity-EDA.logger import logging
+from src.Drug-activity-EDA.exception import customexception
 
 import os
 import sys
@@ -25,7 +25,7 @@ class DataIngestion:
         logging.info("data ingestion started")
         
         try:
-            data=pd.read_csv(Path(os.path.join("notebooks/data","gemstone.csv")))
+            data=pd.read_csv(Path(os.path.join("notebooks/data","qsar_fish_toxicity.csv")))
             logging.info(" i have read dataset as a df")
             
             
@@ -33,7 +33,7 @@ class DataIngestion:
             data.to_csv(self.ingestion_config.raw_data_path,index=False)
             logging.info(" i have saved the raw dataset in artifact folder")
             
-            logging.info("here i have performed train test split")
+            logging.info("train test split in progress")
             
             train_data,test_data=train_test_split(data,test_size=0.25)
             logging.info("train test split completed")
@@ -52,6 +52,6 @@ class DataIngestion:
             
             
         except Exception as e:
-           logging.info("exception during occured at data ingestion stage")
+           logging.info("An exception was encountered in data ingestion stage")
            raise customexception(e,sys)
     
