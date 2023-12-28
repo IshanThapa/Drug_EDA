@@ -1,18 +1,18 @@
 import sys
-sys.path.append("src\DimondPricePrediction")
+sys.path.append("src\Drug-activity-EDA")
 
-from src.DimondPricePrediction.components.data_ingestion import DataIngestion
+from src.Drug-activity-EDA.components.data_ingestion import DataIngestion
 
-from src.DimondPricePrediction.components.data_transformation import DataTransformation
+from src.Drug-activity-EDA.components.data_transformation import DataTransformation
 
-from src.DimondPricePrediction.components.model_trainer import ModelTrainer
+from src.Drug-activity-EDA.components.model_trainer import ModelTrainer
 
 
 
 import os
 import sys
-from src.DimondPricePrediction.logger import logging
-from src.DimondPricePrediction.exception import customexception
+from src.Drug-activity-EDA.logger import logging
+from src.Drug-activity-EDA.exception import customexception
 import pandas as pd
 
 obj=DataIngestion()
