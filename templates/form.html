@@ -1,4 +1,5 @@
 <html>
+  <h1>ENTER YOUR VALUES BELOW</h1>
 <body>
 <form action="{{url_for('predict_datapoint')}}" method="POST">
     <div class="form-group">
@@ -19,40 +20,18 @@
     
 <div class="form-group">
   <label for="NdsCH">NdsCH:</label>
-  <select id="NdsCH" name="NdsCH">
-    <option value="Fair">Fair</option>
-    <option value="Good">Good</option>
-    <option value="Very Good">Very Good</option>
-    <option value="Premium">Premium</option>
-    <option value="Ideal">Ideal</option>
-  </select>
+  <input type="text" id="NdsCH" name="NdsCH" placeholder="Enter NdsCH value (float)">
+  
 </div>
   
 <div class="form-group">
   <label for="NdssC">NdssC:</label>
-  <select id="NdssC" name="NdssC">
-    <option value="D">D</option>
-    <option value="E">E</option>
-    <option value="F">F</option>
-    <option value="G">G</option>
-    <option value="H">H</option>
-    <option value="I">I</option>
-    <option value="J">J</option>
-  </select>
+  <input type="text" id="NdssC" name="NdssC" placeholder="Enter NdssC value (float)">
 </div>
 
 <div class="form-group">
   <label for="MLOGP">MLOGP:</label>
-  <select id="MLOGP" name="MLOGP">
-    <option value="I1">I1</option>
-    <option value="SI2">SI2</option>
-    <option value="SI1">SI1</option>
-    <option value="VS2">VS2</option>
-    <option value="VS1">VS1</option>
-    <option value="VVS2">VVS2</option>
-    <option value="VVS1">VVS1</option>
-    <option value="IF">IF</option>
-  </select>
+  <input type="text" id="MLOGP" name="MLOGP" placeholder="Enter MLOGP value (float)">
 </div>
 
 <div style="clear:both;"></div>
