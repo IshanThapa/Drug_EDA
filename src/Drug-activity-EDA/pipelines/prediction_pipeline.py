@@ -36,9 +36,9 @@ class CustomData:
                  CIC0:float,
                  SM1_Dz(Z):float,
                  GATS1i:float,
-                 NdsCH:str,
-                 NdssC:str,
-                 MLOGP:str):
+                 NdssC:int,
+                 NdsCH:int,
+                 MLOGP:float):
         
         self.CIC0=CIC0
         self.SM1_Dz(Z)=SM1_Dz(Z)

@@ -1,5 +1,5 @@
     
-from src.DimondPricePrediction.pipelines.prediction_pipeline import CustomData,PredictPipeline
+from src.Drug-activity-EDA.pipelines.prediction_pipeline import CustomData,PredictPipeline
 
 from flask import Flask,request,render_template,jsonify
 
