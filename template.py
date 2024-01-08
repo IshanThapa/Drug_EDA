@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 
-package_name="Drug-activity-EDA"
+package_name="Drug_EDA"
 
 list_of_files=[
     "github/workflows/.gitkeep",
