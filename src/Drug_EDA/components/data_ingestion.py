@@ -1,8 +1,8 @@
 
 import pandas as pd
 import numpy as np
-from src.Drug-activity-EDA.logger import logging
-from src.Drug-activity-EDA.exception import customexception
+from src.Drug_EDA.logger import logging
+from src.Drug_EDA.exception import customexception
 
 import os
 import sys

@@ -1,9 +1,9 @@
 import os
 import sys
 import pandas as pd
-from src.Drug-activity-EDA.exception import customexception
-from src.Drug-activity-EDA.logger import logging
-from src.Drug-activity-EDA.utils.utils import load_object
+from src.Drug_EDA.exception import customexception
+from src.Drug_EDA.logger import logging
+from src.Drug_EDA.utils.utils import load_object
 
 
 class PredictPipeline:

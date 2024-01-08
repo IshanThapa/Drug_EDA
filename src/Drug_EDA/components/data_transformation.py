@@ -5,15 +5,15 @@ import pandas as pd
 import numpy as np
 
 from dataclasses import dataclass
-from src.Drug-activity-EDA.exception import customexception
-from src.Drug-activity-EDA.logger import logging
+from src.Drug_EDA.exception import customexception
+from src.Drug_EDA.logger import logging
 
 from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OrdinalEncoder,StandardScaler
 
-from src.Drug-activity-EDA.utils.utils import save_object
+from src.Drug_EDA.utils.utils import save_object
 
 @dataclass
 class DataTransformationConfig:

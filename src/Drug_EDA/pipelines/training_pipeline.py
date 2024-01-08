@@ -1,18 +1,18 @@
 import sys
-sys.path.append("src\Drug-activity-EDA")
+sys.path.append("src\Drug_EDA")
 
-from src.Drug-activity-EDA.components.data_ingestion import DataIngestion
+from src.Drug_EDA.components.data_ingestion import DataIngestion
 
-from src.Drug-activity-EDA.components.data_transformation import DataTransformation
+from src.Drug_EDA.components.data_transformation import DataTransformation
 
-from src.Drug-activity-EDA.components.model_trainer import ModelTrainer
+from src.Drug_EDA.components.model_trainer import ModelTrainer
 
 
 
 import os
 import sys
-from src.Drug-activity-EDA.logger import logging
-from src.Drug-activity-EDA.exception import customexception
+from src.Drug_EDA.logger import logging
+from src.Drug_EDA.exception import customexception
 import pandas as pd
 
 obj=DataIngestion()
