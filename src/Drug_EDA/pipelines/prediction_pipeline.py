@@ -34,14 +34,14 @@ class PredictPipeline:
 class CustomData:
     def __init__(self,
                  CIC0:float,
-                 SM1_Dz(Z):float,
+                 SM1_Dz:float,
                  GATS1i:float,
                  NdssC:int,
                  NdsCH:int,
                  MLOGP:float):
         
         self.CIC0=CIC0
-        self.SM1_Dz(Z)=SM1_Dz(Z)
+        self.SM1_Dz=SM1_Dz
         self.GATS1i=GATS1i
         self.NdsCH = NdsCH
         self.NdssC = NdssC
@@ -52,7 +52,7 @@ class CustomData:
             try:
                 custom_data_input_dict = {
                     'CIC0':[self.CIC0],
-                    'SM1_Dz(Z)':[self.SM1_Dz(Z)],
+                    'SM1_Dz':[self.SM1_Dz],
                     'GATS1i':[self.GATS1i],
                     'NdsCH':[self.NdsCH],
                     'NdssC':[self.NdssC],
