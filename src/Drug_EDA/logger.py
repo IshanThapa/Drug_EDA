@@ -11,7 +11,7 @@ log_path=os.path.join(os.getcwd(),"logs")
 LOG_FILEPATH=os.path.join(log_path,LOG_FILE)
 
 
-logging.basicConfig(level=logging.DEBUG, 
+logging.basicConfig(level=logging.DEBUG,
                     filename=LOG_FILEPATH,
                     format="[%(asctime)s] %(lineno)d %(name)s - %(levelname)s - %(message)s"
                     
