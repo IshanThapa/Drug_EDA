@@ -13,7 +13,7 @@ from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OrdinalEncoder,StandardScaler
 
-from src.Drug_EDA.utils.utils import save_object
+from src.Drug_EDA.utils import save_object
 
 @dataclass
 class DataTransformationConfig:
