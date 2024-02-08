@@ -5,14 +5,14 @@ import os
 import sys
 from src.Drug_EDA.logger import logging
 from src.Drug_EDA.exception import customexception
-from dataclasses import dataclass
+from pydantic import BaseModel
 from src.Drug_EDA.utils.utils import save_object
 from src.Drug_EDA.utils.utils import evaluate_model
 
 from sklearn.linear_model import LinearRegression, Ridge,Lasso,ElasticNet
 
 
-@dataclass 
+#@dataclass 
 class ModelTrainerConfig:
     trained_model_file_path = os.path.join('artifacts','model.pkl')
     

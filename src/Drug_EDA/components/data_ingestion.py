@@ -7,13 +7,13 @@ from src.Drug_EDA.exception import customexception
 import os
 import sys
 from sklearn.model_selection import train_test_split
-from dataclasses import dataclass
-from pathlib import Path
+from pydantic import BaseModel
+from pathlib_mate import Path
 
 class DataIngestionConfig:
-    raw_data_path:str=os.path.join("artifacts","raw.csv")
-    train_data_path:str=os.path.join("artifacts","train.csv")
-    test_data_path:str=os.path.join("artifacts","test.csv")
+    raw_data_path:str = os.path.join("artifacts","raw.csv")
+    train_data_path:str = os.path.join("artifacts","train.csv")
+    test_data_path:str = os.path.join("artifacts","test.csv")
 
 
 class DataIngestion:

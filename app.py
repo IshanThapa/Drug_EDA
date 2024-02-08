@@ -18,16 +18,13 @@ def predict_datapoint():
     
     else:
         data=CustomData(
-            
-            carat=float(request.form.get('carat')),
-            depth = float(request.form.get('depth')),
-            table = float(request.form.get('table')),
-            x = float(request.form.get('x')),
-            y = float(request.form.get('y')),
-            z = float(request.form.get('z')),
-            cut = request.form.get('cut'),
-            color= request.form.get('color'),
-            clarity = request.form.get('clarity')
+
+            CIC0 = float(request.form.get('CIC0')),
+            SM1_Dz = float(request.form.get('SM1_Dz')),
+            GATS1i = float(request.form.get('GATS1i')),
+            NdssC = int(request.form.get('NdssC')),
+            NdsCH = int(request.form.get('NdsCH')),
+            MLOGP = float(request.form.get('MLOGP'))
         )
         
         final_data=data.get_data_as_dataframe()
