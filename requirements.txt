@@ -1,12 +1,16 @@
-pandas
-scikit-learn
-numpy
-seaborn
-ipykernel
-Flask
+pandas == 2.2.0
+scikit-learn == 1.4.0
+scipy == 1.12.0
+seaborn == 0.13.2
+numpy == 1.26.4
+matplotlib == 3.8.2
+Flask == 3.0.2
 #this is more stable version
 mlflow==2.2.2
-dvc
-
+dvc == 3.43.1
+ipykernel == 6.29.1
 #-e .
 #source C:/Users/crucial/AppData/Local/anaconda3/Scripts/activate
+#conda activate ./env
+
+#python A:/MY_PROJECTS/qsar/src/Drug_EDA/pipelines/training_pipeline.py

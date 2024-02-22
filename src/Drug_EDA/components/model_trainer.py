@@ -8,6 +8,7 @@ from src.Drug_EDA.exception import customexception
 from pydantic import BaseModel
 from src.Drug_EDA.utils.utils import save_object
 from src.Drug_EDA.utils.utils import evaluate_model
+from sklearn.neighbors import KNeighborsRegressor
 
 from sklearn.linear_model import LinearRegression, Ridge,Lasso,ElasticNet
 
@@ -35,7 +36,8 @@ class ModelTrainer:
             'LinearRegression':LinearRegression(),
             'Lasso':Lasso(),
             'Ridge':Ridge(),
-            'Elasticnet':ElasticNet()
+            'Elasticnet':ElasticNet(),
+            'KNReg':KNeighborsRegressor()
         }
             
             model_report:dict=evaluate_model(X_train,y_train,X_test,y_test,models)

@@ -31,8 +31,11 @@ class DataTransformation:
         try:
             logging.info('Data Transformation initiated')
 
+            # numerical_cols = ['CIC0', 'SM1_Dz', 'GATS1i', 'NdsCH', 'NdssC', 'MLOGP', 'LC50']
+
             numerical_cols = ['CIC0', 'SM1_Dz', 'GATS1i', 'NdsCH', 'NdssC', 'MLOGP']
-                        
+            
+
             logging.info('Pipeline Initiated')
             
             ## Numerical Pipeline
@@ -59,11 +62,12 @@ class DataTransformation:
             raise customexception(e,sys)
             
     
-    def initialize_data_transformation(self,train_path,test_path):
+    def initialize_data_transformation(self, train_path, test_path):
         try:
-            train_df=pd.read_csv(train_path)
-            test_df=pd.read_csv(test_path)
-            
+            numerical_cols = ['CIC0', 'SM1_Dz', 'GATS1i', 'NdsCH', 'NdssC', 'MLOGP', 'LC50']
+            train_df=pd.read_csv(train_path, names=numerical_cols, sep=';', header=None)
+            test_df=pd.read_csv(test_path, names=numerical_cols, sep=';', header=None)
+            print(train_df.head())
             logging.info("read train and test data complete")
             logging.info(f'Train Dataframe Head : \n{train_df.head().to_string()}')
             logging.info(f'Test Dataframe Head : \n{test_df.head().to_string()}')
